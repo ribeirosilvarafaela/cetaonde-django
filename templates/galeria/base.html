@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Viagens</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+</head>
+<body>
+    <header class="header">
+        <h1>Galeria de Viagens</h1>
+        <nav class="navigation">
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; gap: 20px;">
+                <li><a href="{% url 'index' %}" style="color: #007acc; font-size: 18px; text-decoration: none; font-weight: bold; padding: 8px 15px; border-radius: 5px; transition: background-color 0.3s;">Início</a></li>
+                <li><a href="{% url 'dicas' %}" style="color: #007acc; font-size: 18px; text-decoration: none; font-weight: bold; padding: 8px 15px; border-radius: 5px; transition: background-color 0.3s;">Dicas</a></li>
+                <li><a href="{% url 'contato' %}" style="color: #007acc; font-size: 18px; text-decoration: none; font-weight: bold; padding: 8px 15px; border-radius: 5px; transition: background-color 0.3s;">Contato</a></li>
+                <li><a href="{% url 'blog' %}" style="color: #007acc; font-size: 18px; text-decoration: none; font-weight: bold; padding: 8px 15px; border-radius: 5px; transition: background-color 0.3s;">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    {% block footer %}
+    {% endblock %}
+</body>
+</html>

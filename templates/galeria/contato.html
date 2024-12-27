@@ -1,0 +1,37 @@
+{% extends "galeria/base.html" %}
+{% load static %}
+
+{% block content %}
+<main style="background-color: #f9f9f9; padding: 20px;">
+    <h1 style="color: #333; text-align: center;">Contato</h1>
+    <section style="max-width: 600px; margin: auto;">
+        <form id="contact-form" style="background-color: #e0f7fa; padding: 20px; border-radius: 10px; max-width: 100%; box-sizing: border-box;">
+            <label for="name" style="color: #2b879e; display: block; margin-bottom: 5px;">
+                Nome:
+                <input type="text" id="name" name="name" style="width: 100%; padding: 10px; border: 1px solid #3ec9a7; border-radius: 5px; margin-bottom: 15px; box-sizing: border-box;">
+            </label>
+
+            <label for="email" style="color: #2b879e; display: block; margin-bottom: 5px;">
+                E-mail:
+                <input type="email" id="email" name="email" style="width: 100%; padding: 10px; border: 1px solid #3ec9a7; border-radius: 5px; margin-bottom: 15px; box-sizing: border-box;">
+            </label>
+
+            <label for="message" style="color: #2b879e; display: block; margin-bottom: 5px;">
+                Mensagem:
+                <textarea id="message" name="message" rows="4" style="width: 100%; padding: 10px; border: 1px solid #3ec9a7; border-radius: 5px; margin-bottom: 15px; box-sizing: border-box;"></textarea>
+            </label>
+
+            <button type="submit" style="background-color: #2b879e; color: #f2e8c4; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer;">Enviar</button>
+        </form>
+    </section>
+</main>
+{% endblock %}
+
+{% block footer %}
+<footer style="background-color: #007acc; color: white; padding: 20px; text-align: center;">
+    <p>Siga-nos nas redes sociais:</p>
+    <a href="https://facebook.com" style="color: white; margin: 0 10px;">Facebook</a>
+    <a href="https://twitter.com" style="color: white; margin: 0 10px;">Twitter</a>
+    <a href="https://instagram.com" style="color: white; margin: 0 10px;">Instagram</a>
+</footer>
+{% endblock %}
