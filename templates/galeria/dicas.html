@@ -1,0 +1,32 @@
+{% extends "galeria/base.html" %}
+{% load static %}
+
+{% block content %}
+<main style="background-color: #f9f9f9; padding: 20px;">
+    <h1 style="color: #333; text-align: center;">Dicas de Viagem</h1>
+    <section class="dicas">
+        <article>
+            <h2>Vida Nômade</h2>
+            <p>Saiba como viver viajando pelo mundo e se adaptar a diferentes culturas.</p>
+            <button>Saiba Mais</button>
+        </article>
+        <article>
+            <h2>Economize Viajando</h2>
+            <p>Dicas para economizar em passagens, hospedagem e alimentação durante suas aventuras.</p>
+            <img src="{% static 'assets/images/img1.jpg' %}" alt="Exemplo de Dica de Viagem">
+            <button>Ver Mais</button>
+        </article>
+        <article>
+            <h2>Planejamento de Viagem</h2>
+            <p>Dicas para planejar sua viagem de forma eficiente e sem estresse.</p>
+            <button>Leia Mais</button>
+        </article>
+        <article>
+            <h2>Segurança em Viagens</h2>
+            <p>Como se manter seguro durante suas viagens pelo mundo.</p>
+            <button>Saiba Mais</button>
+        </article>
+    </section>
+</main>
+{% endblock %}
+
