@@ -1,0 +1,36 @@
+{% extends "galeria/base.html" %}
+{% load static %}
+
+{% block content %}
+    <h1 style="color: #333; text-align: center;">Blog de Viagens</h1>
+    <section style="max-width: 800px; margin: auto; padding: 20px;">
+        <article class="blog-article">
+            <h2>Um dia em Paris</h2>
+            <div class="image-container">
+                <img src="{% static 'assets/images/img1.jpg' %}" alt="Paris">
+            </div>
+            <p>Paris, a cidade do amor e do romance. Aonde você pode se perder em ruas estreitas e encontrar lugares incríveis.</p>
+            <a href="#" class="button">Leia Mais</a>
+        </article>
+        <article class="blog-article">
+            <h2>Viagem para o Egito</h2>
+            <div class="image-container">
+                <img src="{% static 'assets/images/img2.jpg' %}" alt="Egito">
+            </div>
+            <p>O Egito, um dos lugares mais incríveis do mundo. Aonde você pode ver pirâmides e desfrutar de uma cultura rica.</p>
+            <a href="#" class="button">Leia Mais</a>
+        </article>
+        <article class="blog-article">
+            <h2>Um dia em Barcelona</h2>
+            <div class="image-container">
+                <img src="{% static 'assets/images/img3.jpg' %}" alt="Barcelona">
+            </div>
+            <p>Barcelona, a cidade da arte e da arquitetura. Aonde você pode se perder em ruas estreitas e encontrar lugares incríveis.</p>
+            <a href="#" class="button">Leia Mais</a>
+        </article>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="{% url 'index' %}" class="button">Voltar para Home</a>
+        </div>
+    </section>
+{% endblock %}
+
