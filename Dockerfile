@@ -10,6 +10,8 @@ RUN apt-get update && apt-get install -y \
 # Atualizar pip e setuptools
 RUN pip3 install --upgrade pip setuptools
 
+RUN apt update && apt install -y git
+
 # Instalar dependências do projeto
 COPY requirements.txt .
 RUN pip3 install -r requirements.txt
